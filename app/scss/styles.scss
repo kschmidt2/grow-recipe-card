@@ -20,45 +20,149 @@ $breakpoint-lg: 717px;
   }
 }
 
+$font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
+$cursive-stack: 'Shadows Into Light Two', cursive;
+
 @import "css-reset";
 @import "colors";
 
-.chart-area {
-  @import "type";
-  @import "highcharts";
-
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-image:
-    url(https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_leaves.1562793463706.png);
-  background-position: bottom right;
-  max-width: 660px;
+.recipe-card {
+  width: 330px;
   margin-bottom: 25px;
   font-family: $font-stack;
+  color: $slate-secondary-6;
 
-  & a {
-    border-bottom: 1px solid $green-primary;
-    color: $green-primary;
-    text-decoration: none;
-  }
-
-  & .chart-title-social, & .grow-logo-social {
-    display: none;
-  }
-
-  & .chart-container {
+  & .top-strip {
+    height: 25px;
     width: 100%;
-    height: 300px;
-    margin-top: -10px;
-    @include sm-md-xl {
-      height: 400px;
-    }
+    background-image: url(https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/strip-03.1565208141043.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: -5px;
+  }
+
+  & img.recipe-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  & .recipe-name {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 600;
+      margin: 10px 0;
+      text-transform: uppercase;
+  }
+
+  & .recipe-background {
+    background-image: url(https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/background-03.1565209106773.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding-top: 15px;
+  }
+
+  & .author-name, .instagram-name {
+      font-family: $cursive-stack;
+      font-size: 18px;
+      width: 200px;
+      padding: 0px 10px;
+      margin-left: 15px;
+      background-color: white;
+      & a {
+        color: $slate-secondary-6;
+        text-decoration: none;
+        &:hover {
+          color: $slate-secondary-4;
+        }
+      }
+  }
+
+  & .author-name {
+    margin-bottom: 5px;
+  }
+
+  & .leaf-info {
+    text-align: right;
+    position: relative;
+    top: -100px;
+    right: 3px;
+    background-image: url(https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/leaf-03.1565208129636.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 136px;
+    float: right;
+    padding: 35px 20px 0 0;
+  }
+
+  & .price {
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: -5px;
+      color: white;
+      margin-bottom: -10px;
+      padding-right: 3px;
+  }
+
+  & .total-time {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: white;
+  }
+
+  & .info-box {
+      font-size: 14px;
+      width: 280px;
+      margin: 15px;
+      background-color: white;
+      padding: 10px;
+      & .title {
+        font-family: $cursive-stack;
+        font-size: 22px;
+      }
+      & ul {
+        padding: 0;
+        list-style-type: none;
+        margin-block-end: 0;
+        margin-block-start: 5px;
+        & li {
+          background: url(https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/bullet-03.1565208109194.png) no-repeat;
+          background-position: 0 4px;
+          background-size: 10px;
+          padding-left: 15px;
+          margin-bottom: 5px;
+        }
+      }
   }
 
   & .grow-logo {
-    width: 214px;
-    margin-top: 20px;
+    width: 220px;
+    margin-left: 15px;
+    margin-bottom: 5px;
   }
+
+  & .download-button {
+    width: 185px;
+    padding: 5px 5px 3px;
+    border: 1px solid $slate-primary;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    float: right;
+    color: $slate-primary;
+    background-color: $slate-secondary-2;
+    &:hover {
+      background-color: white;
+      border-color: $green-secondary-4;
+      color: $green-secondary-4; 
+      fill: $green-secondary-4; 
+    }
+    & #download-icon {
+      height: 13px;
+      margin-right: 2px;
+    }
+  }
+
   
 }
 

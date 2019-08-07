@@ -10,27 +10,70 @@
   <meta name="author" content="SitePoint">
 
   <!--build:css css/styles.min.css-->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/highcharts-setup_styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/recipe-card_styles.css">
   <!--endbuild-->
 
 </head>
 
 <body>
 
-  <div class="chart-area">
-      <div class="chart-head" id="chart-head">This is a headline</div>
-      <div class="chart-subhead">This is a subdeck or chart title. In some cases, there might be a need for a chart title also.</div>
-      <div class="chart-title">This is a chart title</div>
-      <div class="chart-title-social">Social chart title</div>
-      <div class="chart-container" id="chart-container"></div>
-      <div class="chart-note">Note: Anything that needs an additional note or methodology explanation should go here.</div>
-      <div>
-        <span class="chart-credit">kiersten schmidt/grow</span>
-        <span class="chart-source">this is the source</span>
+  <div class="recipe-card">
+
+      <div class="top-strip"></div>
+      <img class="recipe-image" src="https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/recipe-picture.1565211104475.jpg"/>
+
+      <div class="recipe-name">Pan-seared sirloin tips with balsamic glaze</div>
+
+      <div class="recipe-background">
+          <div class="author-name">Sofia Pitt</div>
+          <div class="instagram-name">
+            <a href="http://instagram.com/bottomless__pitt" target="blank">@bottomless__pitt</a>
+          </div>
+    
+          <div class="leaf-info">
+            <div class="price">$12</div>
+            <div class="total-time">35 minutes</div>
+          </div>
+    
+          <div class="info-box">
+            <div class="title">Ingredients</div>
+            <ul>
+              <li>1 lb sirloin steak tips</li>
+              <li>1 tbs Montreal steak seasoning</li>
+            </ul>
+          </div>
+    
+          <div class="info-box">
+              <div class="title">Equipment needed</div>
+              <ul>
+                <li>Cast-iron skillet</li>
+                <li>Chef's knife</li>
+              </ul>
+            </div>
+    
+            <div class="info-box">
+                <div class="title">Directions</div>
+                <ul>
+                  <li>Season steak generously</li>
+                  <li>Heat your cast-iron pan on high</li>
+                  <li>Cook steak 2-4 minutes per side for medium rare</li>
+                  <li>Let rest before slicing</li>
+                </ul>
+              </div>
+    
+              <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/grow-logo-03.1565208119285.png" class="grow-logo"></img>
       </div>
-      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/10/grow_logo.1562793450037.png" class="grow-logo">
-      <img src="https://fm-static.cnbc.com/awsmedia/chart/2019/6/25/grow_logo_transparent-08.1564071637122.png" class="grow-logo-social">
+
+      <a href="https://fm-static.cnbc.com/awsmedia/chart/2019/7/7/recipe-image.1565210915957.jpg">
+        <div class="download-button">
+            <svg id="download-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18"><title>noun_Download_205165</title><path d="M12,4V16.25L17.25,11l.75.66-6.5,6.5L5,11.66,5.75,11,11,16.25V4h1M3,19H4v2H19V19h1v3H3Z" transform="translate(-3 -4)"/></svg>
+            Download recipe
+        </div>
+    </a>
+
+     
+
   </div>
     
   <script src="https://code.highcharts.com/highcharts.js"></script>
