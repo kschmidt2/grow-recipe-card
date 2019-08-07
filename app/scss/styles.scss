@@ -31,6 +31,9 @@ $cursive-stack: 'Shadows Into Light Two', cursive;
   margin-bottom: 25px;
   font-family: $font-stack;
   color: $slate-secondary-6;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
 
   & .top-strip {
     height: 25px;
@@ -71,6 +74,7 @@ $cursive-stack: 'Shadows Into Light Two', cursive;
       & a {
         color: $slate-secondary-6;
         text-decoration: none;
+        font-family: $cursive-stack;
         &:hover {
           color: $slate-secondary-4;
         }
@@ -97,11 +101,12 @@ $cursive-stack: 'Shadows Into Light Two', cursive;
 
   & .price {
       font-weight: 600;
+      line-height: normal;
       font-size: 40px;
       letter-spacing: -5px;
       color: white;
-      margin-bottom: -10px;
       padding-right: 3px;
+      margin-bottom: -10px
   }
 
   & .total-time {
@@ -165,5 +170,3 @@ $cursive-stack: 'Shadows Into Light Two', cursive;
 
   
 }
-
-@import "social";
